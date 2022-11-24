@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .navbar-logo{
     font-family: Cookie, cursive;
     font-size: 32px;
@@ -39,12 +41,31 @@
     background-color: black;
 }
 
+/* .navbarqisim_keyingi {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 0px 30px 0px white;
+} */
+
 .navbarqisim_keyingi {
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 70px;
+    -webkit-animation: main_nav 4s infinite;
+    animation: main_nav 2s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes main_nav {
+    50% {box-shadow: 0 0 15px 5px white;}
+}
+/* Standard syntax */
+@keyframes main_nav {
+    50% {box-shadow: 0 0 15px 5px white;}
 }
 
 .logo{
@@ -54,9 +75,11 @@
 .my-bg{
     position: absolute;
     width: 450px;
-    border: 2px solid red;
-    border-radius: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
     padding: 8px;
+    background-color: black;
+    color: white;
 }
 
 .logo{
@@ -79,8 +102,19 @@
     margin-top: -20px;
 }
 
-.my_profil{
+.my_profil {
     border-radius: 8px;
+    color: white;
+    -webkit-animation: my_profil 4s infinite;
+    animation: my_profil 2s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes my_profil {
+    50% {box-shadow: 0 0 10px 0px white;}
+}
+/* Standard syntax */
+@keyframes my_profil {
+    50% {box-shadow: 0 0 10px 0px white;}
 }
 
 .rang1{
@@ -126,7 +160,9 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.421);
+    height: 100vh;
+    background-image: url(../pages/Auth/img/1617593344_33-p-zadnii-temnii-fon-34.jpg);
+    background-size: cover;
 }
 
 .comment-1 {
@@ -142,7 +178,7 @@ body{
 
 .right_comm {
     background-color: white;
-    margin-top: -145px;
+    margin-top: -15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px white;
 }
@@ -188,9 +224,32 @@ body{
     box-shadow: 0px 0px 20px 0px white;
 }
 
-.setting_bg{
-    background-color: white;
-    box-shadow: 0px 0px 20px 0px white;
+.settings_upload{
+ 
+}
+
+.settings_upload_glavni {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_glava_edit {
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid #999;
+    -webkit-animation: test_edit 4s infinite;
+    animation: test_edit 4s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes test_edit {
+    50% {box-shadow: 0px 0px 30px 0px white;}
+}
+/* Standard syntax */
+@keyframes test_edit {
+    50% {box-shadow: 0px 0px 30px 0px white;}
 }
 
 .upload_user_img {
@@ -198,6 +257,19 @@ body{
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 10px;
+    -webkit-animation: test_edit_img 4s infinite;
+    animation: test_edit_img 1.5s infinite;
+}
+@-webkit-keyframes test_edit_img {
+    50% {box-shadow: 0px 0px 10px 0px white;}
+}
+/* Standard syntax */
+@keyframes test_edit_img {
+    50% {box-shadow: 0px 0px 10px 0px white;}
+}
+
+.name_user_group{
+    color: white;
 }
 
 .upload_user_img2 {
@@ -205,4 +277,104 @@ body{
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 10px;
+    border: 1px solid white;
+}
+
+.login_system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login_glava1{
+    
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+}
+
+.name_login h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Pacifico';
+}
+
+.login_glava {
+    width: 400px;
+    background-color: black;
+    padding: 80px 20px;
+    border-radius: 10px;
+    border: 2px solid #999;
+    -webkit-animation: test 4s infinite;
+    animation: test 4s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes test {
+    50% {box-shadow: 0px 0px 30px 0px white;}
+}
+/* Standard syntax */
+@keyframes test {
+    50% {box-shadow: 0px 0px 30px 0px white;}
+}
+
+.input_siginin{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* .button_login {
+    border: 1px solid white;
+    color: white;
+    padding: 5px 60px;
+    margin-top: 15px;
+    border-radius: 5px;
+} */
+
+.button_center{
+    display: flex;
+    justify-content: center;
+}
+
+.button_login {
+    color: white;
+    padding: 5px 60px;
+    margin-top: 15px;
+    border-radius: 5px;
+    -webkit-animation: main 4s infinite;
+    animation: main 1.5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes main {
+    50% {box-shadow: 0px 0px 10px 0px white;}
+}
+/* Standard syntax */
+@keyframes main {
+    50% {box-shadow: 0px 0px 10px 0px white;}
+}
+
+.forget_button{
+    color: white;
+}
+
+.sign_up_buttons{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign_up{
+    color: white;
+    padding: 5px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.my_post_text {
+    color: white;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+import Login from "./Signin";
 import { LOGIN } from "../../constants/routes";
 import { Helmet } from "react-helmet";
 
@@ -24,12 +24,12 @@ const ForgotPassword = () => {
   const isInvalid = email.trim() === "";
 
   return (
-    <div className="bg-black h-screen w-screen flex flex-wrap items-center justify-center p-3">
+    <div className=" h-screen w-screen flex flex-wrap items-center justify-center p-3">
       <Helmet>
         <title>Forgot Password</title>
       </Helmet>
-      <div className="w-[350px] grid gap-y-3">
-        <div className="bg-white border px-[40px] pt-10 pb-6">
+      <div className="login_glava">
+        <div className="login_glava1">
           <div className="flex justify-center mb-8">
             <img
               className="h-[51px]"
@@ -37,10 +37,6 @@ const ForgotPassword = () => {
               alt=""
             />
           </div>
-
-          <p className="text-[17px] font-semibold text-[#8e8e8e] text-center mb-6">
-            Reset password
-          </p>
           {/* <div className="flex items-center my-3 w-full">
                 <div className="border-b-[1px] border-gray-300 h-0 w-full"></div>
               </div> */}
@@ -51,22 +47,22 @@ const ForgotPassword = () => {
               <input
                 type="text"
                 aria-label="Enter your email address"
-                placeholder="Enter Your Email"
-                className="text-xs p-3 mb-3 border-[1px] border-gray-300 rounded bg-white w-full outline-gray-300"
+                placeholder="Email"
+                className="input_siginin"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
-              <button
-                disabled={isInvalid}
-                type="submit"
-                className={`bg-blue-500 text-sm mt-3 cursor-pointer text-white rounded-md w-full h-8 font-medium ${
-                  isInvalid && "opacity-50"
-                }`}
-              >
-                Reset Password
-              </button>
+              <div className="button_center">
+                <button
+                  disabled={isInvalid}
+                  type="submit"
+                  className={`button_login mb-4 ${isInvalid && "opacity-50"}`}
+                >
+                  Reset Password
+                </button>
+              </div>
             </div>
 
             <div class="flex items-center my-2.5 mb-3.5 mt-3.5">
@@ -77,11 +73,11 @@ const ForgotPassword = () => {
               <div class="h-px bg-gray-300 flex-1"></div>
             </div>
 
-            <div className="flex justify-center items-center flex-col w-full bg-white">
+            <div className="flex justify-center items-center flex-col w-full mt-10">
               <p className="text-sm">
                 <Link
                   to={LOGIN}
-                  className="font-semibold text-brand text-blue-500"
+                  className="sign_up"
                 >
                   Log in
                 </Link>

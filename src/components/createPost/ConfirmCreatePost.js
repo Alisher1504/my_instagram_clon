@@ -34,7 +34,7 @@ const ConfirmCreatePost = ({ image, back }) => {
             const imageUrl = await uploadImage.snapshot.ref.getDownloadURL().then(async url => {
                 const photo = await addPostToFirestore(caption, url, userId, imageId);
                 setLoading(0);
-                alert("image succesfully uploaded");
+                alert("uploaded succesfully ");
                 window.location.reload();
             })
 
@@ -57,7 +57,7 @@ const ConfirmCreatePost = ({ image, back }) => {
     return (
         
         <div className=" items justify-center">
-            <div className="p-3 border items justify-center" style={{height: 200, width:300}}>
+            <div className="p-3 border items justify-center" style={{width:300}}>
                 <div>
                     <div className="flex justify-center">
                     <img

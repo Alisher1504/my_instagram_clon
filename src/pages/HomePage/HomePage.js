@@ -10,14 +10,6 @@ const HomePage = () => {
 
     return (
         <div className="orqa_fon_1 py-10">
-            <div className='container1 flex'>
-                <img className='img_post1' src={imgcontrnt}/>
-                <img className='img_post1' src={imgcontrnt}/>
-                <img className='img_post1' src={imgcontrnt}/>
-                <img className='img_post1' src={imgcontrnt}/>
-                <img className='img_post1' src={imgcontrnt}/>
-                <img className='img_post1' src={imgcontrnt}/>
-            </div>
             <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg mt-10">
                 <Timeline/>
                 <Sidebar/>

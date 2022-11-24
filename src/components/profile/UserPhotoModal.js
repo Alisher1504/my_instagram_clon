@@ -80,7 +80,7 @@ const UserPhotoModal = ({ showModal, setShowModal, photo }) => {
 
                   >
                     <div >
-                      <div className=" p-60 border items justify-center" style={{height: 400, width:600}} >
+                      <div className="border items justify-center py-4" style={{ width:600}} >
                         <div className="flex justify-center">
                           <div className="flex justify-center">
                           {photo.imageSrc ? (
@@ -124,7 +124,7 @@ const UserPhotoModal = ({ showModal, setShowModal, photo }) => {
                                   </div>
                                 </div>
                             </div>
-                      <div className="w-92 p-60 flex flex-col justify-between"
+                      <div className="w-92 px-60 pb-20 flex flex-col justify-between"
                         style={{width: "500px" }}
                       >
                      
@@ -138,7 +138,7 @@ const UserPhotoModal = ({ showModal, setShowModal, photo }) => {
                                 <FooterModal post={post} setPost={setPost}/>
                               )}
                             </div>
-                        </div>
+                        </div> <br></br><br></br>
                       </div>
                     </div>
                   </div>

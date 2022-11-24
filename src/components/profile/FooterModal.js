@@ -139,7 +139,7 @@ const FooterModal = ({ post, setPost }) => {
                 </div>
                 <div>
                     <button
-                        className="text-blue-500 border-2 text-sm font-bold text-sm rounded-xl text-blue w-14 h-8"
+                        className="text-white bg-black border-2 text-sm font-bold text-sm rounded-xl text-blue w-14 h-8"
                         onClick={addComment}
                     >
                     Post

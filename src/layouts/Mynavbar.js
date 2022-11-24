@@ -1,15 +1,15 @@
 import React, { useContext, useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import { EDIT_PROFILE, HOME, LOGIN } from '../constants/routes';
-import UserContext from './../context/user';
-import FirebaseContext from './../context/firebase';
-import { SIGN_UP } from './../constants/routes';
+import UserContext from '../context/user';
+import FirebaseContext from '../context/firebase';
+import { SIGN_UP } from '../constants/routes';
 import CreatePost from '../components/createPost/CreatePost';
 import useUser from '../hooks/useUser';
 import "./style.css";
-import SearchBar from './SearchBar';
+import SearchBar from './searchnaw';
 
-const NavBar = () => {
+const NavBar = () => {  
     const navigate = useNavigate();
     const searchRef = useRef();
     const navbarRef = useRef(null);
@@ -53,7 +53,7 @@ const NavBar = () => {
             <div className="navbarqisim_keyingi">
                
 
-                <div className='logo'> <h1>My Black Instagram</h1> </div>
+                <div className='logo'> <a href="/">My Black Instagram</a> </div>
 
                 <div className="">
                     <div>
@@ -103,7 +103,7 @@ const NavBar = () => {
                                 
                             </div>
                             <div
-                                className="mt-7 bg-white border-rose-600 cursor-pointer w-20 py-1 relative text-center my_profil"
+                                className="mt-7 cursor-pointer w-20 py-1 relative text-center my_profil"
                                 onClick={() => setDropdownOpen(prev => !prev)}
                             >
                                 my profil

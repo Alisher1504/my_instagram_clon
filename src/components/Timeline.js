@@ -18,8 +18,8 @@ const Timeline = () => {
                     <Post key={content.docId} content={content}/>
                 ))
             ) : (
-                <p className="text-center text-2xl">
-                    No Followers!   
+                <p className="text-center text-4xl my_post_text">
+                    Please subscribe   
                 </p>
             )}
         </div>

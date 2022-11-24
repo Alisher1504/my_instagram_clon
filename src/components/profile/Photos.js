@@ -73,7 +73,7 @@ const Photos = ({ photos }) => {
                 )}
             </div>
 
-            {!photos || (photos.length === 0 && <p className="text-center text-2xl">No Posts Yet</p>)}
+            {!photos || (photos.length === 0 && <p className="text-center text-2xl my_post_text">No Posts Yet</p>)}
         </div>
         </>
     );
