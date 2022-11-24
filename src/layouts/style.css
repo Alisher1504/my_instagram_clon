@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.navbar-logo{
+    font-family: Cookie, cursive;
+    font-size: 32px;
+}
+
+.bg-blue-inst {
+    background: #005c98;
+}
+
+.text-blue-inst {
+    color: #005c98;
+}
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: #ffffff !important;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+.search_style{
+    width: 450px;
+    height: 35px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.navbarqisim{
+    background-color: black;
+}
+
+.navbarqisim_keyingi {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    color: white;
+}
+
+.my-bg{
+    position: absolute;
+    width: 450px;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.logo{
+    font-size: 30px;
+    font-family: 'Pacifico';
+}
+
+
+.main_flex{
+    display: flex;
+    align-items: center;
+}
+
+.main_button{
+    background-color: white;
+    margin-top: 20px;
+}
+
+.tekkis_navbar{
+    margin-top: -20px;
+}
+
+.my_profil{
+    border-radius: 8px;
+}
+
+.rang1{
+    background-color: rgb(0, 0, 0);
+}
+
+.font_upload {
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.rand_bg_button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Pacifico';
+}
+
+.rand_bg_button1 {
+    background-color: black;
+    padding: 8px 50px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Pacifico';
+    margin-top: 10px;
+
+}
+
+.rasm2{
+    width: 100%;
+}
+
+.razmer1 {
+    width: 500px;
+    margin-left: 100px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.421);
+}
+
+.comment-1 {
+    outline: none;
+}
+
+.comment_post_1 {
+    background-color: black;
+    padding: 0px 10px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.right_comm {
+    background-color: white;
+    margin-top: -145px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.follow_bg{
+    background-color: white;
+    padding: 10px;
+    width: 280px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.my_text_button{
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+.container1{
+    width: 500px;
+    margin-left: 348px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 0px white
+}
+
+.img_post1{
+    width: 76px;
+    border: 2px solid red;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+
+.user_profil_bg{
+    box-shadow: 0px 0px 20px 0px white;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.image_borders2 {
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+.setting_bg{
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+.upload_user_img {
+    background-color: black;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.upload_user_img2 {
+    background-color: black;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
